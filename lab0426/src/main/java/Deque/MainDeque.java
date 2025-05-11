@@ -2,7 +2,9 @@ package Deque;
 
 public class MainDeque {
     public static void main(String[] args) {
-        String stroka = "([{}])";
+        String stroka = "(p{}])";
+        String str1 = "()[]][";
+        System.out.println(cheсk(str1));
         System.out.println(cheсk(stroka));
     }
 
@@ -14,10 +16,9 @@ public class MainDeque {
         } else return false;
         for (int i = 1; i < s.length(); i++) {
             if (stack.isEmpty()) {
-                if (s.charAt(0) == '(' || s.charAt(0) == '{' || s.charAt(0) == '[') {
-                    stack.pull(s.charAt(i));
-                    continue;
-                }
+                if (s.charAt(i) == ']' || s.charAt(i) == '}' || s.charAt(i) == ')') return false;
+                stack.pull(s.charAt(i));
+                continue;
             }
             if (stack.peek() == '(') {
                 if (s.charAt(i) == ')') {
@@ -49,7 +50,6 @@ public class MainDeque {
                 if (s.charAt(i) == '}' || s.charAt(i) == ')') return false;
                 if (s.charAt(i) == '{' || s.charAt(i) == '(' || s.charAt(i) == '[') {
                     stack.pull(s.charAt(i));
-                    continue;
                 }
             }
         }
