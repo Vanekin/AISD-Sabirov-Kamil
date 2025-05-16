@@ -7,10 +7,9 @@
         <groupId>org.example</groupId>
         <artifactId>AISD</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>lab0503</artifactId>
+    <artifactId>HWHashMap</artifactId>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
