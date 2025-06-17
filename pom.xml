@@ -22,6 +22,8 @@
         <module>labDinamicProg</module>
         <module>HW07.06</module>
         <module>lab0706</module>
+        <module>Contest</module>
+        <module>ProgaDZtoAigiz</module>
     </modules>
 
     <properties>
